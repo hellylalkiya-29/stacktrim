@@ -1,19 +1,23 @@
-# User Discovery & Qualitative Validation
+# User Research & Qualitative Stakeholder Discovery
 
 ## Interview 1: Individual Freelance Full-Stack Developer
-- **Current Stack:** ChatGPT Plus ($20), Cursor Pro ($20), GitHub Copilot ($10)
-- **Total Monthly Leakage:** $50/month
-- **Core Problem:** The user is paying for overlapping intelligence. Cursor Pro already includes contextual model tokens, rendering the standalone GitHub Copilot subscription redundant.
-- **Optimization Strategy:** Terminate GitHub Copilot immediately.
+- **Demographic:** Independent contract engineer operating scaled node apps.
+- **Current Stack Matrix:** ChatGPT Plus ($20), Cursor Pro ($20), GitHub Copilot ($10).
+- **Direct Operational Quote:** "I lost track of my active IDE extensions. I bought Cursor Pro because the inline editing features were better, but my monthly card statement shows I am still paying for Copilot on the side."
+- **Surprising Discovery:** Users frequently run overlapping intelligence layers simultaneously simply because subscription bills are abstracted away inside personal credit cards.
+- **Design Iteration:** Built explicit conditional alerting logic to check for the coexistence of Cursor Pro and Copilot, surfacing a $10 redundancy flag immediately.
 
 ## Interview 2: Small Engineering Cohort (3 Engineers)
-- **Current Stack:** Claude Team Plan (3 Users x $25 = $75/mo)
-- **Total Monthly Leakage:** $75/month (Ineligible tier overhead)
-- **Core Problem:** Anthropic enforces a strict 5-seat minimum floor charge for the Team tier. Because this team only has 3 members, they are being billed for 5 seats ($125 total), which means $50/month is complete waste.
-- **Optimization Strategy:** Downgrade to 3 individual Claude Pro seats ($60 total).
+- **Demographic:** Early-stage bootstrapped technology core team.
+- **Current Stack Matrix:** Claude Team Plan (3 Users x $25 reported = $125 minimum enterprise base floor).
+- **Direct Operational Quote:** "We signed up for Anthropic's Team plan expecting to scale up our hiring parameters fast, but we've been stuck at 3 developers for months. We didn't realize they were billing us for a 5-seat contract floor anyway."
+- **Surprising Discovery:** Technical leads focus so heavily on prompt outputs that they completely overlook hidden billing minimum floors built into workspace tiers.
+- **Design Iteration:** Programmed strict mathematical boundaries inside `auditEngine.ts` to automatically flag a minimum 5-seat rule mismatch if team parameters fall beneath the vendor's floor.
 
 ## Interview 3: Solo Bootstrapped Founder
-- **Current Stack:** ChatGPT Team Plan ($30/mo)
-- **Total Monthly Leakage:** $10/month
-- **Core Problem:** User selected the Team plan thinking it would yield higher prompt limits, but as a single operator, they do not utilize workspace shared primitives.
-- **Optimization Strategy:** Revert to standalone ChatGPT Plus tier ($20/mo).
+- **Demographic:** Single operator managing deployment models and outbound growth channels.
+- **Current Stack Matrix:** ChatGPT Team Plan ($30/mo).
+- **Direct Operational Quote:** "I upgraded to the Team tier thinking it would give my account higher inference bandwidth and context limits during heavy code sprints. I didn't realize single-user workspaces derive zero benefit from shared team administrative panels."
+- **Surprising Discovery:** Single founders will aggressively overpay for premium tiers due to ambiguity surrounding token throughput allocation.
+- **Design Iteration:** Structured a strict validation check that recommends dropping back to individual Plus tiers if workspace team sizing inputs equal exactly 1.
+
